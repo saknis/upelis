@@ -1,0 +1,20 @@
+{% extends "baseicon.html" %}
+
+{% block headtitle %}{{ application_name }} - {{ page.name|escape }}{% endblock %}
+
+{% block head %}
+  <style type="text/css">
+
+
+  </style>
+{% endblock %}
+
+{% block buttons %}
+{% endblock %}
+{% block menu %}
+{% endblock %}
+{% block kalbos %}
+{% endblock %}
+{% block body %}
+  {{ page.wikified_content|safe }}
+{% endblock %}

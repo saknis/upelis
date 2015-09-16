@@ -1,0 +1,10 @@
+cron:
+- description: daily summary job
+  url: /delbutton
+  schedule: every 24 hours
+- description: comm spam
+  url: /commspam
+  schedule: every 24 hours
+- description: every 1 mins job
+  url: /checkspamip
+  schedule: every 1 mins

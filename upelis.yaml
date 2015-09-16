@@ -1,0 +1,44 @@
+handlers:
+- url: /env
+  script: env.app
+
+- url: /static/all.zip
+  static_files: static/all_gin.zip
+  upload: static/all_gin.zip
+  login: admin
+
+- url: /static/upelis.zip
+  static_files: static/all_gin.zip
+  upload: static/all_gin.zip
+  login: required
+  
+- url: /dynab
+  script: dynabuttonapp.app
+
+- url: /delbutton
+  script: delbutton.app
+
+- url: /(fb|auth/login|auth/logout)
+  script: facebookoauth.app
+
+- url: /fbsettings
+  script: fbset.app
+
+- url: /(fbf|fbinfo|fbputwall)
+  script: fb.app
+
+- url: /(li|liauth/login|liauth/logout)
+  script: linkedinauth.app
+
+- url: /(vk|vkauth/login|vkauth/logout)
+  script: vkauth.app
+
+- url: /vkphoto/(.*)
+  script: vkphoto.app
+
+- url: /vksettings
+  script: vkset.app
+
+- url: /lisettings
+  script: liset.app
+

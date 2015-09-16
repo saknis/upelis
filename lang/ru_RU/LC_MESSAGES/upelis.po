@@ -1,0 +1,325 @@
+# This file is distributed under the same license as the Upelis package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Upelis\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+
+
+#, python-format
+msgid "header %(cmsname)s"
+msgstr "\t\t\t<h1><a href=\"#\">Система управления контентом \"%(cmsname)s\"</a></h1>\n\t\t\t<div class=\"description\">На основе службы Google AppEngine</div>\n"
+
+msgid "logout"
+msgstr "Выйти"
+
+msgid "login"
+msgstr "Войти"
+
+msgid "page index html %(cmsname)s %(cmspath)s"
+msgstr "<h1>CMS %(cmsname)s</h1><p><a href=\"/install\">/install</a></p><p><a href=\"/admin\">/admin</a></p><p><a href=\"/%(cmspath)s-MainPage-ru.html?mode=edit\">Редактирования основной страницы</a></p><p><a href=\"/%(cmspath)s-menu-ru.html?mode=edit\">/%(cmspath)s-menu-ru.html?mode=edit</a> Редактирования Menu блока</p><p><a href=\"http://upelis.upe.lt/static/upelis.zip\">/static/upelis.zip </a> <strong>Download</strong></p>"
+
+msgid "page menu html %(cmspath)s"
+msgstr "<a href=\"/%(cmspath)s-MainPage-ru.html\">Главная страница</a> <a href=\"/%(cmspath)s-mailform-ru.html\">Отправить сообщение</a> <a href=\"/%(cmspath)s-pic-ru.html\">Галерея</a> <a href=\"/%(cmspath)s-comments-ru.html\">Комментарии</a> <a href=\"/%(cmspath)s-contacts-ru.html\">Контакты</a>"
+
+msgid "Welcome1, %(usernickname)s %(userlogouturl)s"
+msgstr "Добро пожаловать, %(usernickname)s! <a href=\"%(userlogouturl)s\">выйти</a>"
+
+msgid "Welcome2 %(admin)s %(usernickname)s %(userlogouturl)s"
+msgstr "Добро пожаловать %(admin)s, %(usernickname)s! <a href=\"%(userlogouturl)s\">выйти</a>"
+
+msgid "Welcome3, %(usernickname)s %(userlogouturl)s"
+msgstr "Добро пожаловать, %(usernickname)s! <a href=\"%(userlogouturl)s\">выйти</a>"
+
+msgid "Sign in or register %(userloginurl)s"
+msgstr "<a href=\"%(userloginurl)s\">Логин (Регистрация)</a>."
+
+msgid "diferent accounts"
+msgstr "Пожалуйста Логин (Зарегистрироваться), используя любой счет Google."
+
+msgid "Login header %(greeting)s"
+msgstr "<h1>Логин Пользователя</h1><p>%(greeting)s</p>"
+
+msgid "and"
+msgstr "и"
+
+msgid "sign in on Administrator %(userloginurl)s"
+msgstr "<a href=\"%(userloginurl)s\">логин на уровне администратора</a>"
+
+msgid "Sign in on Administrator %(userloginurl)s"
+msgstr "<a href=\"%(userloginurl)s\">Логин на уровне администратора</a>"
+
+msgid "Enviroment header %(greeting)s"
+msgstr "<h1>Переменные среды</h1><p>%(greeting)s</p>"
+
+msgid "Admin header %(greeting)s"
+msgstr "<h1>Admin</h1><p>%(greeting)s</p>"
+
+msgid "page admin content html %(cmspath)s"
+msgstr "<p><a href=\"/upfiles\">upload files</a></p><p><a href=\"/zipme\">zipme</a></p><p><a href=\"/zipcont\">zipcont</a></p><p><a href=\"/memberlist\">memberlist</a></p><p><a href=\"/admin2/\">admin2/</a></p><p><a href=\"/%(cmspath)s-menu-ru.html?mode=edit\">menu edit</a></p><p><a href=\"/%(cmspath)s-MainPage-ru.html?mode=edit\">home edit</a></p>"
+
+msgid "List header %(greeting)s"
+msgstr "<h1>Обзор каталога</h1><p>%(greeting)s</p>"
+
+msgid "Guestbook 1 %(userloginurl)s"
+msgstr "<h1>Гостевая книга</h1><p><a href=\"%(userloginurl)s\">Пожалуйста Логин (Зарегистрироваться)</a>.</p>"
+
+msgid "Guestbook 2"
+msgstr "<h1>Гостевая книга</h1><p>Спасибо за сообщение</p>"
+
+msgid "Guestbook 3 %(greetingusernickname)s post"
+msgstr "<b>%(greetingusernickname)s</b> пишет:"
+
+msgid "Guestbook 4 anonymous post"
+msgstr "Аноним пишет:"
+
+msgid "Guestbook 5 %(guestsendurl)s"
+msgstr "\t<p>\n\t<form action=\"%(guestsendurl)s\" method=\"post\">\n\t<div><textarea name=\"content\" rows=\"5\" cols=\"50\"></textarea></div>\n\t<div><input type=\"submit\" value=\"Отправить\"></div>\t\n</form>\t\n</p>"
+
+msgid "Guestbook 6 %(guestuserloginurl)s"
+msgstr "<h2>Если вы хотите подписать, пожалуйста Логин</h2><p><a href=\"%(guestuserloginurl)s\">Пожалуйста Логин (Зарегистрироваться)</a>.</p>"
+
+msgid "Guestbook header %(guestgreeting)s"
+msgstr "<h1>Гостевая книга</h1>\n%(guestgreeting)s"
+
+msgid "Mail form %(mailsendurl)s %(mailcodekey)s"
+msgstr "\t<div>\n\t<form action=\"%(mailsendurl)s\" enctype=\"multipart/form-data\" method=\"post\">\n\t<div><label>Почтовый адрес: </label></div>\n\t<div><input type=\"text\" name=\"zemail\" /></div>\n\t<div><label>Имя:</label></div>\n\t<div><input type=\"text\" name=\"zrealname\" /></div>\n\t<div><label>Тема: </label></div>\n\t<div><input type=\"text\" name=\"zsubject\" value=\"Mail form - Upelis\"/></div>\n\t<div><label>Сообщение:</label></div>\n\t<div><textarea name=\"zmessage\" rows=\"8\" cols=\"50\"></textarea></div>\n\t<div><label>Защитный код: </label></div>\n\t<div><img src=\"codeimg?id=%(mailcodekey)s\" alt=\"\"></img> <input name=\"scodeid\" type=\"hidden\" value=\"%(mailcodekey)s\" /></div>\n\t<div><input name=\"scode\" size=\"6\" /> </div>\n\t<div><input type=\"submit\" value=\"Отправить сообщение\" /></div>\n\t</form>\n\t</div>\n"
+
+msgid "Mail message %(mailuname)s %(mailumail)s %(mailrealname)s %(mailzmail)s %(mailmessage)s"
+msgstr "\tHello\n\n\tlogin name: %(mailuname)s\n\tlogin email: %(mailumail)s\n\trealname: %(mailrealname)s\n\tinput email: %(mailzmail)s\n\t\n\t%(mailmessage)s\n"
+
+msgid "Mail send OK"
+msgstr "<h1>Сообщение отправлено</h1>"
+
+msgid "Mail send Error"
+msgstr "<h1>Ошибка</h1>"
+
+msgid "Memberlist entry msg %(memlisttime)s %(memlistipaddr)s %(memlistbrowser)s"
+msgstr "\t<br>Последнее время подключения: <br>\t\n<blockquote>%(memlisttime)s</blockquote>\t\n<br>IP: <br>\t\n<blockquote>%(memlistipaddr)s</blockquote>\t\n<br>Браузер: <br>\t\n<blockquote>%(memlistbrowser)s</blockquote>\n"
+
+msgid "Memberlist login %(memlistuserloginurl)s"
+msgstr "<a href=\"%(memlistuserloginurl)s\">Пожалуйста Логин (Зарегистрироваться)</a>, используя любой счет Google."
+
+msgid "Memberlist header %(memlistgreeting)s"
+msgstr "<h1>Список пользователей</h1><p>%(memlistgreeting)s</p>"
+
+msgid "Comments delete %(commswiturl)s %(commkey)s"
+msgstr "<a href=\"%(commswiturl)s?id=%(commkey)s&amp;show=del\">Удалить</a>"
+
+msgid "Comments show %(commswiturl)s %(commkey)s"
+msgstr "<a href=\"%(commswiturl)s?id=%(commkey)s&amp;show=yes\">Показать</a>"
+
+msgid "Comments hidden %(commswiturl)s %(commkey)s"
+msgstr "<a href=\"%(commswiturl)s?id=%(commkey)s&amp;show=no\">Скрыть</a>"
+
+msgid "Comments form %(commsendurl)s %(commcodekey)s"
+msgstr "\t<div>\n\t<form action=\"%(commsendurl)s\" enctype=\"multipart/form-data\" method=\"post\">\n\t<div><label>Комментарий:</label></div>\n\t<div><textarea name=\"content\" rows=\"5\" cols=\"50\"></textarea></div>\n\t<div><label>Фото:</label></div>\n\t<div><input type=\"file\" name=\"img\" /></div>\n\t<div><label>Имя:</label></div>\n\t<div><input type=\"text\" name=\"rname\" /></div>\n\t<div><label>Защитный код: </label></div>\n\t<div><img src=\"codeimg?id=%(commcodekey)s\" alt=\"\"></img> <input name=\"scodeid\" type=\"hidden\" value=\"%(commcodekey)s\" /></div>\n\t<div><input name=\"scode\" size=\"6\" /> </div>\n\t<div><input type=\"submit\" value=\"Отправить комментарий\" /></div>\n\t</form>\n\t</div>\n"
+
+msgid "Comments mail message %(communame)s %(commumail)s %(commrealname)s %(commmessage)s"
+msgstr "\tNew entry Comments\n\n\tlogin name: %(communame)s\n\tlogin email: %(commumail)s\n\trealname: %(commrealname)s\n\n\t%(commmessage)s\n"
+
+msgid "Gallery"
+msgstr "Галерея"
+
+msgid "Imgshar msg 1"
+msgstr "Обзор альбома "
+
+msgid "Imgshar msg 2"
+msgstr " "
+
+msgid "Imgshar msg 3"
+msgstr "Посмотреть альбомы"
+
+msgid "Imgshar msg 4"
+msgstr "Добавить новое фото"
+
+msgid "Imgshar msg 5"
+msgstr "Альбом содержит "
+
+msgid "Imgshar msg 6"
+msgstr " фото."
+
+msgid "Imgshar msg 7"
+msgstr "Посмотреть альбомы"
+
+msgid "Imgshar msg 8"
+msgstr "Поиск по тегам"
+
+msgid "Imgshar msg 9"
+msgstr "Создание нового альбома"
+
+msgid "Imgshar msg 10"
+msgstr "Создание нового альбома"
+
+msgid "Imgshar msg 11"
+msgstr "Название альбома: "
+
+msgid "Imgshar msg 12"
+msgstr "Создать альбом"
+
+msgid "Imgshar msg 14"
+msgstr "Поиск по тегу"
+
+msgid "Imgshar msg 15"
+msgstr "Введите ключевое слово для поиска по тегу: "
+
+msgid "Imgshar msg 16"
+msgstr "Поиск"
+
+msgid "Imgshar msg 17"
+msgstr "Обзор альбомов"
+
+msgid "Imgshar msg 18"
+msgstr "Рассмотрение - "
+
+msgid "Imgshar msg 19"
+msgstr "Назад к альбому"
+
+msgid "Imgshar msg 20"
+msgstr "Добавление фотографий"
+
+msgid "Imgshar msg 21"
+msgstr "Название:"
+
+msgid "Imgshar msg 22"
+msgstr "Описание:"
+
+msgid "Imgshar msg 23"
+msgstr "Метки (через запятую):"
+
+msgid "Imgshar msg 24"
+msgstr "Файл:"
+
+msgid "Imgshar msg 25"
+msgstr "Отправить"
+
+msgid "Imgshar msg 26"
+msgstr "Вы вошли под именем  "
+
+msgid "Imgshar msg 27"
+msgstr "Выйти"
+
+msgid "Imgshar msg 28"
+msgstr "Вы не вошли. "
+
+msgid "Imgshar msg 29"
+msgstr "Войти"
+
+msgid "Imgshar msg 30"
+msgstr "Теги:"
+
+msgid "User control panel form %(usercpsendurl)s %(usercpcodekey)s %(usercpuserid)s %(usercpcontent)s %(usercppseudonimas)s %(rpluscheck)s %(rpicacheck)s %(buvoappcheck)s %(youtname)s %(rcommcheck)s"
+msgstr "\t<div>\n\t<form action=\"%(usercpsendurl)s\" enctype=\"multipart/form-data\" method=\"post\">\n\t<div><label>Kомментарий:</label></div>\n\t<div><textarea name=\"content\" rows=\"15\" cols=\"50\">%(usercpcontent)s</textarea></div>\n\t<div><label>Фото:</label></div>\n\t<div><input type=\"file\" name=\"img\" /></div>Рекомендуемая высота равна ширине\n\t<div><label>Использовать глобальную Фото профиля:</label></div>\n\t<div><input type=\"checkbox\" name=\"globphoto\" value=\"On\" %(buvoappcheck)s /></div>\n\t<div><label>Включить страницу комментариев пользователя:</label></div>\n\t<div><input type=\"checkbox\" name=\"commen\" value=\"On\" %(rcommcheck)s/></div>\n\t<div><label>Enable Google Plus user link:</label></div>\n\t<div><input type=\"checkbox\" name=\"plusen\" value=\"On\" %(rpluscheck)s /></div>\n\t<div><label>Включить Picasa страницу пользователя:</label></div>\n\t<div><input type=\"checkbox\" name=\"picasaen\" value=\"On\" %(rpicacheck)s /></div>\n\t<div><label>Имя пользователя Youtube :</label></div>\n\t<div><input type=\"text\" name=\"youtname\" value=\"%(youtname)s\"/></div>\n\t<div><label>Имя:</label></div>\n\t<div><input type=\"text\" name=\"rname\" value=\"%(usercppseudonimas)s\"/></div>\n\t<div><label>Защищенный код: </label></div>\n\t<div><img src=\"codeimg?id=%(usercpcodekey)s\" alt=\"\"></img> <input name=\"scodeid\" type=\"hidden\" value=\"%(usercpcodekey)s\" /></div>\n\t<div><input name=\"scode\" size=\"6\" /> </div>\n\t<div><input type=\"submit\" value=\"Обновите страницу пользователя\" /></div>\n\t</form>\n\t</div>\n"
+
+msgid "user control panel header"
+msgstr "<h1>Панель конфигурации страницы пользователя</h1>"
+
+msgid "User page %(usercpuserid)s %(usercpcontent)s %(usercppseudonimas)s %(usercpurl)s %(userpicapagetext)s %(usermailformtext)s"
+msgstr "<div>\n<div><label><strong>Kомментарий:</strong></label></div>\n\t<div>%(usercpcontent)s</div>\n\t<div><label><strong>Имя:</strong></label></div>\n\t<div>%(usercppseudonimas)s</div> %(userpicapagetext)s\n\t %(usermailformtext)s\n\t<div>&nbsp;</div>\n\t<div><a href=\"%(usercpurl)s\">Редактирование или создание страницы пользователя</a></div>\n</div>\n"
+
+msgid "user page header %(pseudonimas)s"
+msgstr "<h1>Страница пользователя \"%(pseudonimas)s\"</h1>"
+
+msgid "vartotojo puslapis %(usercppseudonimas)s %(userpageurl)s"
+msgstr "\n\t<div>&nbsp;</div>\n\t<div><a href=\"%(userpageurl)s\">Страница пользователя \"%(usercppseudonimas)s\" - %(userpageurl)s</a></div>"
+
+msgid "pica control link %(usercppicaurl)s"
+msgstr "\n\t<div>&nbsp;</div>\n\t<div><a href=\"%(usercppicaurl)s\">Контроль Picasa альбома</a></div>"
+
+msgid "user pica control panel header"
+msgstr "<h1>Контроль Picasa альбома пользователем</h1>"
+
+msgid "User pica page %(usercpuserid)s %(usercpcontent)s %(usercppseudonimas)s %(usercpurl)s %(usercppicatext)s"
+msgstr "<div>\n<div><label><strong>Kомментарий:</strong></label></div>\n\t<div>%(usercpcontent)s</div>\n\t<div><label><strong>Имя:</strong></label></div>\n\t<div>%(usercppseudonimas)s</div>\n\t%(usercppicatext)s\n\t<div>&nbsp;</div>\n\t<div><a href=\"%(usercpurl)s\">Редактирование или создание страницы пользователя</a></div>\n</div>\n"
+
+msgid "User pica page link text %(usercppseudonimas)s %(userpicapageurl)s"
+msgstr "\n\t<div>&nbsp;</div>\n\t<div><a href=\"%(userpicapageurl)s\">Picasa альбом пользователя \"%(usercppseudonimas)s\"</a></div>"
+
+msgid "user pica page header %(pseudonimas)s"
+msgstr "<h1>Страница Picasa альбома пользователя \"%(pseudonimas)s\"</h1>"
+
+msgid "user mailform header %(pseudonimas)s"
+msgstr "<h1>Форма электронной почты пользователя \"%(pseudonimas)s\"</h1>"
+
+msgid "User mailform %(usercpuserid)s %(usercpcontent)s %(usercppseudonimas)s %(usercpurl)s %(userpicapagetext)s"
+msgstr "<div>\n<div><label><strong>Kомментарий:</strong></label></div>\n\t<div>%(usercpcontent)s</div>\n\t<div><label><strong>Имя:</strong></label></div>\n\t<div>%(usercppseudonimas)s</div>%(userpicapagetext)s\n\t<div>&nbsp;</div>\n\t<div><a href=\"%(usercpurl)s\">Редактирование или создание страницы пользователя</a></div>\n</div>\n"
+
+msgid "User Mail form %(mailsendurl)s %(mailcodekey)s"
+msgstr "\n\t<div>&nbsp;</div>\n\t<div>\n\t<form action=\"%(mailsendurl)s\" enctype=\"multipart/form-data\" method=\"post\">\n\t<div><label>Имя:</label></div>\n\t<div><input type=\"text\" name=\"zrealname\" /></div>\n\t<div><label>Тема: </label></div>\n\t<div><input type=\"text\" name=\"zsubject\" value=\"Mail form - Upelis\"/></div>\n\t<div><label>Сообщение:</label></div>\n\t<div><textarea name=\"zmessage\" rows=\"8\" cols=\"50\"></textarea></div>\n\t<div><label>Защитный код: </label></div>\n\t<div><img src=\"/codeimg?id=%(mailcodekey)s\" alt=\"\"></img> <input name=\"scodeid\" type=\"hidden\" value=\"%(mailcodekey)s\" /></div>\n\t<div><input name=\"scode\" size=\"6\" /> </div>\n\t<div><input type=\"submit\" value=\"Отправить сообщение\" /></div>\n\t</form>\n\t</div>\n"
+
+msgid "User mail form page link text %(usercppseudonimas)s %(usermailformpageurl)s"
+msgstr "\n\t<div>&nbsp;</div>\n\t<div><a href=\"%(usermailformpageurl)s\">Страница формы электронной почты пользователя \"%(usercppseudonimas)s\"</a></div>"
+
+msgid "user yout page header %(pseudonimas)s"
+msgstr "<h1>Любимы пользователем \"%(pseudonimas)s\" YouTube канал</h1>"
+
+msgid "User yout page %(usercpuserid)s %(usercpcontent)s %(usercppseudonimas)s %(usercpurl)s %(usercppicatext)s"
+msgstr "<div>\n<div><label><strong>Kомментарий:</strong></label></div>\n\t<div>%(usercpcontent)s</div>\n\t<div><label><strong>Имя:</strong></label></div>\n\t<div>%(usercppseudonimas)s</div>\n\t%(usercppicatext)s\n\t<div>&nbsp;</div>\n\t<div><a href=\"%(usercpurl)s\">Редактирование или создание страницы пользователя</a></div>\n</div>\n"
+
+msgid "User yout page link text %(usercppseudonimas)s %(useryoutpageurl)s"
+msgstr "\n\t<div>&nbsp;</div>\n\t<div><a href=\"%(useryoutpageurl)s\">Любимы пользователем \"%(usercppseudonimas)s\" YouTube канал</a></div>"
+
+msgid "user comm page header %(pseudonimas)s"
+msgstr "<h1>Страница пользователя \"%(pseudonimas)s\" с комментариями</h1>"
+
+msgid "User comm page %(usercpuserid)s %(usercpcontent)s %(usercppseudonimas)s %(usercpurl)s %(usercppicatext)s"
+msgstr "<div>\n<div><label><strong>Kомментарий:</strong></label></div>\n\t<div>%(usercpcontent)s</div>\n\t<div><label><strong>Имя:</strong></label></div>\n\t<div>%(usercppseudonimas)s</div>\n\t%(usercppicatext)s\n\t<div>&nbsp;</div>\n\t<div><a href=\"%(usercpurl)s\">Редактирование или создание страницы пользователя</a></div>\n</div>\n"
+
+msgid "User comm page link text %(usercppseudonimas)s %(usercommpageurl)s"
+msgstr "\n\t<div>&nbsp;</div>\n\t<div><a href=\"%(usercommpageurl)s\">Страница пользователя \"%(usercppseudonimas)s\" с комментариями</a></div>"
+
+msgid "user Comments form %(commsendurl)s %(commcodekey)s"
+msgstr "\t<div>\n\t<form action=\"%(commsendurl)s\" enctype=\"multipart/form-data\" method=\"post\">\n\t<div><label>Kомментарий:</label></div>\n\t<div><textarea name=\"content\" rows=\"5\" cols=\"50\"></textarea></div>\n\t<div><label>Фото:</label></div>\n\t<div><input type=\"file\" name=\"img\" /></div>\n\t<div><label>Защищенный код: </label></div>\n\t<div><img src=\"/codeimg?id=%(commcodekey)s\" alt=\"\"></img> <input name=\"scodeid\" type=\"hidden\" value=\"%(commcodekey)s\" /></div>\n\t<div><input name=\"scode\" size=\"6\" /> </div>\n\t<div><input type=\"submit\" value=\"Отправить комментарий\" /></div>\n\t</form>\n\t</div>\n"
+
+msgid "--- tag h1 not found in page ---"
+msgstr "--- tag \"h1\" not found in page ---"
+
+msgid "Message from:"
+msgstr "Message from:"
+
+msgid "logged Facebook %(fbprofileurl)s %(fbpicurl)s %(fbname)s %(url)s"
+msgstr "<p><a href=\"%(fbprofileurl)s\"><img src=\"%(fbpicurl)s\" alt=\"\"></img></a></p>\n<p>You are logged in as %(fbname)s</p>\n<p><a href=\"%(url)s\">Log out</a></p>"
+
+msgid "not logged Facebook %(url)s"
+msgstr "<p>You are not yet logged into this site</p>\n<p><a href=\"%(url)s\">Log in with Facebook</a></p>"
+
+msgid "Put to Facebook Wall"
+msgstr "Put to Facebook Wall"
+
+msgid "Commenting is turned on with a social networks logins:"
+msgstr "Commenting is turned on with a social networks logins:"
+
+msgid "Facebook header %(greeting)s"
+msgstr "<h1>Facebook login status</h1><p>%(greeting)s</p>"
+
+msgid "logged LinkedIn %(liprofileurl)s %(lipicurl)s %(liname)s %(url)s"
+msgstr "<p><a href=\"%(liprofileurl)s\"><img src=\"%(lipicurl)s\" alt=\"\"></img></a></p>\n<p>You are logged in as %(liname)s</p>\n<p><a href=\"%(url)s\">Log out</a></p>"
+
+msgid "not logged LinkedIn %(url)s"
+msgstr "<p>You are not yet logged into this site</p>\n<p><a href=\"%(url)s\">Log in with LinkedIn</a></p>"
+
+msgid "LinkedIn header %(greeting)s"
+msgstr "<h1>LinkedIn login status</h1><p>%(greeting)s</p>"
+
+msgid "page Comments form %(commsendurl)s %(commcodekey)s %(commbutsrc)s"
+msgstr "\t<div>\n\t<form action=\"%(commsendurl)s\" enctype=\"multipart/form-data\" method=\"post\">\n\t<div><label>Comment:</label></div>\n\t<div><textarea name=\"content\" rows=\"5\" cols=\"50\"></textarea></div>\n\t<div><label>Photo:</label></div>\n\t<div><input type=\"file\" name=\"img\" /></div>\n\t<div><label>Secure code: </label></div>\n\t<div><img src=\"/codeimg?id=%(commcodekey)s\" alt=\"\"></img> <input name=\"scodeid\" type=\"hidden\" value=\"%(commcodekey)s\" /></div>\n\t<div><input name=\"scode\" size=\"6\" /> </div>\n\t<div><input name=\"cmd\"  type=\"hidden\" value=\"pagecomm\" /><input type=\"image\"  %(commbutsrc)s alt=\"Send comment\" /></div>\n\t</form>\n\t</div>\n"
+
+msgid "Submit Comment"
+msgstr "Submit Comment"
+
+msgid "View Comments"
+msgstr "View Comments"
+
+msgid "logged VKontakte %(vkprofileurl)s %(vkpicurl)s %(vkname)s %(url)s"
+msgstr "<p><a href=\"%(vkprofileurl)s\"><img src=\"%(vkpicurl)s\" alt=\"\"></img></a></p>\n<p>You are logged in as %(vkname)s</p>\n<p><a href=\"%(url)s\">Log out</a></p>"
+
+msgid "not logged VKontakte %(url)s"
+msgstr "<p>You are not yet logged into this site</p>\n<p><a href=\"%(url)s\">Log in with VKontakte</a></p>"
+
+msgid "VKontakte header %(greeting)s"
+msgstr "<h1>VKontakte login status</h1><p>%(greeting)s</p>"
+
+

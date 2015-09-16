@@ -1,0 +1,208 @@
+# This file is distributed under the same license as the Upelis package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Upelis\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: lt\n"
+
+
+#, python-format
+msgid "header"
+msgstr "\t\t\t<h1><a href=\"#\">TVS \"Upelis\"</a></h1>\n\t\t\t<div class=\"description\">Google paslaugos AppEngine pagrindu</div>\n"
+
+msgid "logout"
+msgstr "Atsijungti"
+
+msgid "login"
+msgstr "Prisijungti"
+
+msgid "page index html"
+msgstr "<h1>CMS Upelis</h1><p><a href=\"/install\">/install</a></p><p><a href=\"/admin\">/admin</a></p><p><a href=\"/?mode=edit\">/?mode=edit</a> Pagrindinio puslapio redagavimas</p><p><a href=\"/menu?mode=edit\">/menu?mode=edit</a> Meniu redagavimas</p><p><a href=\"http://upelis.upe.lt/static/upelis.zip\">/static/upelis.zip </a></p>"
+
+msgid "page menu html"
+msgstr "<a href=\"/\">Home</a>\n<a href=\"/siustilaiska\">Mail Form</a>\n<a href=\"/pic\">Gallery</a>\n<a href=\"/atsiliepimai\">Comments</a>\n<a href=\"/kontaktai\">Contacts</a>"
+
+msgid "Welcome1, %(usernickname)s %(userlogouturl)s"
+msgstr "Welcome, %(usernickname)s! <a href=\"%(userlogouturl)s\">sign out</a>"
+
+msgid "Welcome2 %(admin)s %(usernickname)s %(userlogouturl)s"
+msgstr "Welcome %(admin)s, %(usernickname)s! <a href=\"%(userlogouturl)s\">sign out</a>"
+
+msgid "Welcome3, %(usernickname)s %(userlogouturl)s"
+msgstr "Welcome, %(usernickname)s! <a href=\"%(userlogouturl)s\">sign out</a>"
+
+msgid "Sign in or register %(userloginurl)s"
+msgstr "<a href=\"%(userloginurl)s\">Sign in or register</a>."
+
+msgid "diferent accounts"
+msgstr "Prisijunkite (užsiregistruokite) naudodamiesi bet kokia Google paskyra."
+
+msgid "Login header %(greeting)s"
+msgstr "<h1>Login User</h1><p>%(greeting)s</p>"
+
+msgid "and"
+msgstr "and"
+
+msgid "sign in on Administrator %(userloginurl)s"
+msgstr "<a href=\"%(userloginurl)s\">sign in on Administrator</a>"
+
+msgid "Sign in on Administrator %(userloginurl)s"
+msgstr "<a href=\"%(userloginurl)s\">Sign in on Administrator</a>"
+
+msgid "Enviroment header %(greeting)s"
+msgstr "<h1>Enviroment</h1><p>%(greeting)s</p>"
+
+msgid "Admin header %(greeting)s"
+msgstr "<h1>Admin</h1><p>%(greeting)s</p>"
+
+msgid "page admin content html"
+msgstr "<p><a href=\"/upfiles\">upload files</a></p><p><a href=\"/zipme\">zipme</a></p><p><a href=\"/zipcont\">zipcont</a></p><p><a href=\"/memberlist\">memberlist</a></p><p><a href=\"/admin2/\">admin2/</a></p><p><a href=\"/menu?mode=edit\">menu edit</a></p><p><a href=\"/?mode=edit\">Home edit</a></p>"
+
+msgid "List header %(greeting)s"
+msgstr "<h1>List directory</h1><p>%(greeting)s</p>"
+
+msgid "Guestbook 1 %(userloginurl)s"
+msgstr "<h1>Svečių knyga</h1><p><a href=\"%(userloginurl)s\">Prisijunkite (užsiregistruokite)</a>.</p>"
+
+msgid "Guestbook 2"
+msgstr "<h1>Svečių knyga</h1><p>Ačiū už įrašą</p>"
+
+msgid "Guestbook 3 %(greetingusernickname)s post"
+msgstr "<b>%(greetingusernickname)s</b> parašė:"
+
+msgid "Guestbook 4 anonymous post"
+msgstr "Anonimas parašė:"
+
+msgid "Guestbook 5 %(guestsendurl)s"
+msgstr "\t<p>\n\t<form action=\"%(guestsendurl)s\" method=\"post\">\n\t<div><textarea name=\"content\" rows=\"3\" cols=\"50\"></textarea></div>\n\t<div><input type=\"submit\" value=\"Pasirašyti\"></div>\t\n</form>\t\n</p>"
+
+msgid "Guestbook 6 %(guestuserloginurl)s"
+msgstr "<h2>Jei norite pasirašyti, prisijunkite</h2><p><a href=\"%(guestuserloginurl)s\">Prisijunkite (užsiregistruokite)</a>.</p>"
+
+msgid "Guestbook header %(guestgreeting)s"
+msgstr "<h1>Svečių knyga</h1>\n%(guestgreeting)s"
+
+msgid "Mail form %(mailsendurl)s %(mailcodekey)s"
+msgstr "\t<div>\n\t<form action=\"%(mailsendurl)s\" enctype=\"multipart/form-data\" method=\"post\">\n\t<div><label>Email from: </label></div>\n\t<div><input type=\"text\" name=\"zemail\" /></div>\n\t<div><label>Name:</label></div>\n\t<div><input type=\"text\" name=\"zrealname\" /></div>\n\t<div><label>Subject: </label></div>\n\t<div><input type=\"text\" name=\"zsubject\" value=\"Mail form - Upelis\"/></div>\n\t<div><label>Message:</label></div>\n\t<div><textarea name=\"zmessage\" rows=\"8\" cols=\"50\"></textarea></div>\n\t<div><label>Secure code: </label></div>\n\t<div><img src=\"codeimg?id=%(mailcodekey)s\" alt=\"\" /> <input name=\"scodeid\" type=\"hidden\" value=\"%(mailcodekey)s\" /></div>\n\t<div><input name=\"scode\" size=\"6\" /> </div>\n\t<div><input type=\"submit\" value=\"Send Mail\" /></div>\n\t</form>\n\t</div>\n"
+
+msgid "Mail message %(mailuname)s %(mailumail)s %(mailrealname)s %(mailzmail)s %(mailmessage)s"
+msgstr "\tHello\n\n\tlogin name: %(mailuname)s\n\tlogin email: %(mailumail)s\n\trealname: %(mailrealname)s\n\tinput email: %(mailzmail)s\n\t\n\t%(mailmessage)s\n"
+
+msgid "Mail send OK"
+msgstr "<h1>Send Ok</h1>"
+
+msgid "Mail send Error"
+msgstr "<h1>Error</h1>"
+
+msgid "Memberlist entry msg %(memlisttime)s %(memlistipaddr)s %(memlistbrowser)s"
+msgstr "\t<br>Paskutinio prisijungimo laikas: <br>\t\n<blockquote>%(memlisttime)s</blockquote>\t\n<br>IP: <br>\t\n<blockquote>%(memlistipaddr)s</blockquote>\t\n<br>Naršyklė: <br>\t\n<blockquote>%(memlistbrowser)s</blockquote>\n"
+
+msgid "Memberlist login %(memlistuserloginurl)s"
+msgstr "<a href=\"%(memlistuserloginurl)s\">Prisijunkite (užsiregistruokite)</a> naudodamiesi bet kokia Google paskyra."
+
+msgid "Memberlist header %(memlistgreeting)s"
+msgstr "<h1>Narių sąrašas</h1><p>%(memlistgreeting)s</p>"
+
+msgid "Comments delete %(commswiturl)s %(commkey)s"
+msgstr "<a href=\"%(commswiturl)s?id=%(commkey)s&amp;show=del\">Delete</a>"
+msgid "Comments show %(commswiturl)s %(commkey)s"
+msgstr "<a href=\"%(commswiturl)s?id=%(commkey)s&amp;show=yes\">Show</a>"
+msgid "Comments hidden %(commswiturl)s %(commkey)s"
+msgstr "<a href=\"%(commswiturl)s?id=%(commkey)s&amp;show=no\">Hidden</a>"
+
+msgid "Comments form %(commsendurl)s %(commcodekey)s"
+msgstr "\t<div>\n\t<form action=\"%(commsendurl)s\" enctype=\"multipart/form-data\" method=\"post\">\n\t<div><label>Comment:</label></div>\n\t<div><textarea name=\"content\" rows=\"4\" cols=\"50\"></textarea></div>\n\t<div><label>Photo:</label></div>\n\t<div><input type=\"file\" name=\"img\" /></div>\n\t<div><label>Name:</label></div>\n\t<div><input type=\"text\" name=\"rname\" /></div>\n\t<div><label>Secure code: </label></div>\n\t<div><img src=\"codeimg?id=%(commcodekey)s\" alt=\"\" /> <input name=\"scodeid\" type=\"hidden\" value=\"%(commcodekey)s\" /></div>\n\t<div><input name=\"scode\" size=\"6\" /> </div>\n\t<div><input type=\"submit\" value=\"Submit Comment\" /></div>\n\t</form>\n\t</div>\n"
+
+msgid "Comments mail message %(communame)s %(commumail)s %(commrealname)s %(commmessage)s"
+msgstr "\tNew entry Comments\n\n\tlogin name: %(communame)s\n\tlogin email: %(commumail)s\n\trealname: %(commrealname)s\n\n\t%(commmessage)s\n"
+
+msgid "Gallery"
+msgstr "Galerija"
+
+msgid "Imgshar msg 1"
+msgstr "Albumo "
+
+msgid "Imgshar msg 2"
+msgstr " peržiūra"
+
+msgid "Imgshar msg 3"
+msgstr "Peržiūreti albumus"
+
+msgid "Imgshar msg 4"
+msgstr "Įkelti naują nuotrauką"
+
+msgid "Imgshar msg 5"
+msgstr "Albume yra "
+
+msgid "Imgshar msg 6"
+msgstr " nuotraukų."
+
+msgid "Imgshar msg 7"
+msgstr "Albumų peržiūra"
+
+msgid "Imgshar msg 8"
+msgstr "Paieška pagal žymę"
+
+msgid "Imgshar msg 9"
+msgstr "Naujo albumo sukurimas"
+
+msgid "Imgshar msg 10"
+msgstr "Naujo albumo sukūrimas"
+
+msgid "Imgshar msg 11"
+msgstr "Albumo vardas: "
+
+msgid "Imgshar msg 12"
+msgstr "Sukurti albumą"
+
+msgid "Imgshar msg 14"
+msgstr "Paieška pagal žymę"
+
+msgid "Imgshar msg 15"
+msgstr "Įveskite žodį paieškai pagal žymę: "
+
+msgid "Imgshar msg 16"
+msgstr "Paieška"
+
+msgid "Imgshar msg 17"
+msgstr "Albumų peržiūra"
+
+msgid "Imgshar msg 18"
+msgstr "Peržiūra - "
+
+msgid "Imgshar msg 19"
+msgstr "Grįžti į albumą"
+
+msgid "Imgshar msg 20"
+msgstr "Naujos nuotraukos įkėlimas"
+
+msgid "Imgshar msg 21"
+msgstr "Pavadinimas:"
+
+msgid "Imgshar msg 22"
+msgstr "Aprašymas:"
+
+msgid "Imgshar msg 23"
+msgstr "Žymės (atskirti kableliu):"
+
+msgid "Imgshar msg 24"
+msgstr "Failas:"
+
+msgid "Imgshar msg 25"
+msgstr "Siųsti"
+
+msgid "Imgshar msg 26"
+msgstr "Jūs esate prisijungęs vardu  "
+
+msgid "Imgshar msg 27"
+msgstr "Atsijungti"
+
+msgid "Imgshar msg 28"
+msgstr "Jūs neprisijungęs. "
+
+msgid "Imgshar msg 29"
+msgstr "Prisijungti"
+

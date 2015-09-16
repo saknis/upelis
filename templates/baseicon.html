@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" >
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="author" content="upe.lt"/>
+	<title>
+            {% block headtitle %}
+              {% if imgshar %}
+                {{ application_name }} - {{ gallery }}
+              {% else %}
+                {{ application_name }}
+              {% endif %}
+            {% endblock %}
+	</title>
+	<link rel="stylesheet" href="/static/css/style-k.css" type="text/css" charset="utf-8" />
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+   <!-- Hack to avoid flash of unstyled content in IE -->
+   {% block head %}{% endblock %}
+
+</head>
+
+<body>
+
+<div id="lentele">	
+		<!-- <h2>WELCOME</h2> -->
+          {% block body %}{% endblock %}
+</div>
+
+</body>
+
+</html>

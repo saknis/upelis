@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block head %}
+  <style type="text/css">
+
+
+  </style>
+{% endblock %}
+
+{% block buttons %}
+              {% if not noedit %}
+                <span class="item"><input type="button" onclick="location.href='{{ page.edit_url|escape }}'" value="Edit This Page"/></span>
+              {% endif %}
+{% endblock %}
+{% block menu %}
+  {{ menu.content|safe }}
+{% endblock %}
+{% block kalbos %}
+  {{ kalbos.content|safe }}
+{% endblock %}
+{% block body %}
+{% endblock %}
+{% block title %}{{imgshar_msg_18}}{{pic.title}}{% endblock %}
+{% block content %}
+<div class='pictitle'>
+  <h2>{{pic.title}}</h2>
+</div>
+<div class='picview'>
+  <img src='/upelis-pic2image-{{plet}}/{{image_key}}' alt=''></img>
+</div>
+<div class='piccaption'>
+  {{pic.caption}}
+</div>
+<div class='pictags'>
+  {{imgshar_msg_30}}
+  {% for tag in pic.tags %}
+  <a href='/upelis-picsearch-{{plet}}?q={{tag}}'>{{tag}}</a>{% if not forloop.last %},{% endif %}
+  {% endfor %}
+</div>
+<a href='/upelis-picalbum-{{plet}}/{{pic.album.key}}'>{{imgshar_msg_19}}</a>
+{% endblock %}

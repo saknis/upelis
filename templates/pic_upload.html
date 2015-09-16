@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block head %}
+  <style type="text/css">
+
+
+  </style>
+{% endblock %}
+
+{% block buttons %}
+              {% if not noedit %}
+                <span class="item"><input type="button" onclick="location.href='{{ page.edit_url|escape }}'" value="Edit This Page"/></span>
+              {% endif %}
+{% endblock %}
+{% block menu %}
+  {{ menu.content|safe }}
+{% endblock %}
+{% block kalbos %}
+  {{ kalbos.content|safe }}
+{% endblock %}
+{% block body %}
+{% endblock %}
+{% block title %}{{imgshar_msg_20}}{% endblock %}
+{% block content %}
+<form action='/upelis-picupload-{{plet}}/{{album_key}}' method='post'
+  enctype='multipart/form-data'>
+  <div class='formrow'>
+    {{imgshar_msg_21}}
+    <input type='text' name='title'>
+  </div>
+  <div class='formrow'>
+    {{imgshar_msg_22}}
+    <textarea name='caption' rows='4' cols='60'></textarea>
+  </div>
+  <div class='formrow'>
+    {{imgshar_msg_23}}
+    <input type='text' name='tags'>
+  </div>
+  <div class='formrow'>
+    {{imgshar_msg_24}}
+    <input type='file' name='picfile'>
+  </div>
+  <input type='submit' value='{{imgshar_msg_25}}'>
+</form>
+{% endblock %}

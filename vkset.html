@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Facebook Settings</title>
+  </head>
+  <body>
+ <form action="/vksettings" enctype="multipart/form-data" method="post">
+	<div><label>VKONTAKTE_ID:</label></div>
+	<div><input name="vkset1" value="{{vkset1|escape }}" type="text" size=80></div>
+	<div><label>VKONTAKTE_APP_ID: </label></div>
+	<div><input name="vkset2" value="{{vkset2|escape }}" type="text" size=80></div>
+	<div><label>VKONTAKTE_APP_SECRET:</label></div>
+	<div><input name="vkset3" value="{{vkset3|escape }}" type="text" size=80></div>
+	<div><label>VKONTAKTE_URL: </label></div>
+	<div><input name="vkset4" value="{{vkset4|escape }}" type="text" size=80></div>
+	<div><input value="Submit" type="submit"></div>
+	</form>
+  </body>
+</html>

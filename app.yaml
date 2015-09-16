@@ -1,0 +1,132 @@
+application: upelis-new
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+builtins:
+- remote_api: on
+
+includes:
+- upelis.yaml
+
+handlers:
+- url: /media
+  static_dir: media
+
+- url: /static
+  static_dir: static
+
+- url: /checkspamip
+  script: checkspamip.app
+
+- url: /commspam
+  script: commspam.app
+
+- url: /bl3
+  script: bl3.app
+
+- url: /logs
+  script: logs.app
+  login: admin
+
+- url: /logs2
+  script: logs2.app
+  login: admin
+
+- url: /logs3
+  script: logs3.app
+  login: admin
+
+- url: /logs4
+  script: logs4.app
+  login: admin
+
+- url: /zipme
+  script: zipme.app
+
+- url: /zipcont
+  script: zipcont.app
+
+- url: /ttt
+  script: ttt.app
+
+- url: /sk
+  script: sk.app
+
+- url: /admin2/.*
+  script: google.appengine.ext.admin.application
+  login: admin
+
+- url: /stats.*
+  script: google.appengine.ext.appstats.ui.app
+  login: admin
+
+- url: /robots.txt
+  static_files: static/robots.txt
+  upload: static/robots.txt
+
+- url: /sitemap.xml
+  script: sitemap.app
+
+- url: /rss
+  script: rss.app
+
+- url: /src.*
+  script: files.app
+
+- url: /upfiles
+  script: files.app
+  login: admin  
+
+- url: /delfile
+  script: files.app
+  login: admin  
+
+- url: /on
+  script: siteon.app
+  login: admin  
+
+- url: /(avatar|avatar2)
+  script: avatar.app
+  login: required
+
+- url: /appfeed
+  script: appfeed.app
+
+#- url: /upelis-pic(new.*|upload.*)
+#  script: image_sharing.app
+#  login: admin
+
+- url: /upelis-pic(new.*|upload.*)
+  script: image_sharing.app
+  login: admin
+
+- url: /upelis-pic2(.*)
+  script: image_sharing_serve.app
+  
+- url: /upelis-pic(.*)
+  script: image_sharing.app
+
+- url: /
+  script: wiki.app
+  
+- url: /sign
+  script: wiki.app
+  login: required
+
+- url: /install
+  script: wiki.app
+  login: admin  
+
+- url: /upelis.*
+  script: wiki.app
+
+- url: .*
+  script: wiki.app
+
+libraries:
+- name: webapp2
+  version: "2.5.2"
+- name: PIL
+  version: latest

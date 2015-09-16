@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block headtitle %}{{ application_name }} - {{ page.name|escape }}{% endblock %}
+
+{% block head %}
+  <style type="text/css">
+
+
+  </style>
+{% endblock %}
+
+{% block buttons %}
+              {% if not noedit %}
+                <span class="item"><input type="button" onclick="location.href='{{ page.edit_url|escape }}'" value="Edit This Page"/></span>
+              {% endif %}
+{% endblock %}
+{% block menu %}
+  {{ menu.content|safe }}
+{% endblock %}
+{% block kalbos %}
+  {{ kalbos.content|safe }}
+{% endblock %}
+{% block body %}
+  {{ page.wikified_content|safe }}
+{% endblock %}

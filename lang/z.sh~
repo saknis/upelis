@@ -1,0 +1,22 @@
+
+cd "/mnt/app/upelis/upe\-new\-27/lang/by\_BY/LC\_MESSAGES/"
+python /mnt/Python27/Tools/i18n/msgfmt.py upelis.po
+cd "/mnt/app/upelis/upe\-new\-27/lang/en\_US/LC\_MESSAGES/"
+python /mnt/Python27/Tools/i18n/msgfmt.py upelis.po
+cd "/mnt/app/upelis/upe\-new\-27/lang/lt\_LT/LC\_MESSAGES/"
+python /mnt/Python27/Tools/i18n/msgfmt.py upelis.po
+cd "/mnt/app/upelis/upe\-new\-27/lang/ru\_RU/LC\_MESSAGES/"
+python /mnt/Python27/Tools/i18n/msgfmt.py upelis.po
+cd "/mnt/app/upelis/upe\-new\-27/lang/de\_DE/LC\_MESSAGES/"
+python /mnt/Python27/Tools/i18n/msgfmt.py upelis.po
+cd "/mnt/app/upelis/upe\-new\-27/lang/it\_IT/LC\_MESSAGES/"
+python /mnt/Python27/Tools/i18n/msgfmt.py upelis.po
+cd "/mnt/app/upelis/upe\-new\-27/lang/lv\_LV/LC\_MESSAGES/"
+python /mnt/Python27/Tools/i18n/msgfmt.py upelis.po
+cd "/mnt/app/upelis/upe\-new\-27/lang/ua\_UA/LC\_MESSAGES/"
+python /mnt/Python27/Tools/i18n/msgfmt.py upelis.po
+cd "/mnt/app/upelis/upe\-new\-27/lang/pl\_PL/LC\_MESSAGES/"
+python /mnt/Python27/Tools/i18n/msgfmt.py upelis.po
+cd "/mnt/app/upelis/upe\-new\-27/lang/de\_DE/LC\_MESSAGES/"
+python /mnt/Python27/Tools/i18n/msgfmt.py upelis.po
+

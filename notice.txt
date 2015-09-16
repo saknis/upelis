@@ -1,0 +1,23 @@
+upelis
+	http://www.upelis.org/
+cccwiki
+	http://code.google.com/p/google-app-engine-samples/source/browse/trunk/cccwiki
+	http://code.google.com/p/google-app-engine-samples/downloads/detail?name=cccwiki_20080409.tar.gz
+feedparser
+	http://feedparser.org/
+image_sharing.py
+	http://code.google.com/p/google-app-engine-samples/source/browse/trunk/image_sharing
+Picasa.py
+	http://www.wepoco.org/
+tinymce
+	http://www.tinymce.com/
+Simple PNG Canvas for Python 
+	http://the.taoofmac.com
+Postmarkup
+	Author: Will McGugan (http://www.willmcgugan.com)
+BBCode rendering engine
+	http://code.google.com/p/postmarkup/
+PyRSS2Gen.py
+	Andrew Dalke <dalke@dalkescientific.com>
+dynabutton.py
+	João S. O. Bueno Calligaris

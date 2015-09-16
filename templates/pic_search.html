@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block head %}
+  <style type="text/css">
+
+
+  </style>
+{% endblock %}
+
+{% block buttons %}
+              {% if not noedit %}
+                <span class="item"><input type="button" onclick="location.href='{{ page.edit_url|escape }}'" value="Edit This Page"/></span>
+              {% endif %}
+{% endblock %}
+{% block menu %}
+  {{ menu.content|safe }}
+{% endblock %}
+{% block kalbos %}
+  {{ kalbos.content|safe }}
+{% endblock %}
+{% block body %}
+{% endblock %}
+{% block title %}{{imgshar_msg_14}}{% endblock %}
+{% block content %}
+<form action='/upelis-picsearch-{{plet}}' method='get'>
+    {{imgshar_msg_15}}<input type='text' name='q'>
+  <input type='submit' value='{{imgshar_msg_16}}'>
+</form>
+{% for pic in pics %}
+<div class='picpreview'>
+  <img src='/upelis-picthumbnail-{{plet}}/{{pic.key}}' alt=''></img>
+  <div class='piclink'><a
+  href='/upelis-picshowimage-{{plet}}/{{pic.key}}'>{{pic.title}}</a></div>
+  <div class='picsubmitter'>{{pic.submitter}}</div>
+</div>
+{% endfor %}
+<a href='/upelis-pic-{{plet}}'>{{imgshar_msg_17}}</a>
+{% endblock %}

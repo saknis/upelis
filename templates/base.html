@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" >
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="author" content="upe.lt"/>
+	<title>
+            {% block headtitle %}
+              {% if imgshar %}
+                {{ application_name }} - {{ gallery }}
+              {% else %}
+                {{ application_name }}
+              {% endif %}
+            {% endblock %}
+	</title>
+	<link rel="stylesheet" href="/static/css/style-k.css" type="text/css" charset="utf-8" />
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+   <!-- Hack to avoid flash of unstyled content in IE -->
+  <script type="text/javascript"> </script>
+    <script type="text/javascript">
+
+    function NewPage() {
+      var pageName = window.prompt("Enter the WikiName of your new page:");
+      if (pageName) {
+        location.href = pageName + "?mode=edit";
+      }
+    }
+
+    </script>
+   {% block head %}{% endblock %}
+<script type="text/javascript">
+<!-- //
+function makeVisible(pName) 
+{
+  var item = document.getElementById(pName);
+  var contentPanel = document.getElementById("userlist");
+  var contents = contentPanel.getElementsByTagName("div");
+	   var mystring = "ABCDEF";
+
+  for (var i = 0; i < contents.length; i++) {
+   if (contents[i].id != undefined) {
+	   	    mystring = contents[i].id;
+
+var text =  mystring.substring(0, 3);
+if (text == 'ppp') { 
+	   
+   if (contents[i] != item) {
+      contents[i].style.display = "none"
+    } else {
+   contents[i].style.display = "";
+	}
+}
+  }
+
+}
+}
+// -->
+</script>
+</head>
+
+<body>
+{% if isadmin %}
+
+                         <p>
+						 <span class="item"><input type="button" value="New Page" onclick="NewPage()"/></span> 
+						 {% block buttons %}{% endblock %}</p>
+{% endif %}
+
+<div id="page">	
+	<div id="header">
+{{ msgtext_header|safe }}
+	</div>
+	
+	<div id="mainarea">
+	<div id="contentarea">
+		<!-- <h2>WELCOME</h2> -->
+          {% block body %}{% endblock %}
+          {% if imgshar %}
+            <h1>{%block header %}{{ gallery }} - {% block title %}{% endblock %}{% endblock %}</h1>
+            <div class='content'>
+            {% block content %}{% endblock %}
+            </div>
+          {% else %}
+          {% endif %}
+          
+		
+	</div>
+	
+	<div id="sidebar">
+		<div id="sidebarnav">
+          {% if user %}
+            
+			<!-- {{ user.nickname }} -->
+            
+          {% endif %}
+          <div id="sidebarnavlang"><ul class="lang"> {% block kalbos %}{% endblock %}</ul></div>              
+          {% block menu %}{% endblock %}              
+          {% if user %}
+		    {{ user.nickname }} |
+            <a href="{{ logout_url|escape }}" onmouseover="makeVisible('ppp1')"><img src="/static/images/g16.png" alt="Google" onmouseover="makeVisible('ppp1')"></img> {{ msgtext_logout }}</a>
+          {% else %}
+            <a href="{{ login_url|escape }}"  onmouseover="makeVisible('ppp1')"><img src="/static/images/g16.png" alt="Google" onmouseover="makeVisible('ppp1')"></img> {{ msgtext_login }}</a>
+          {% endif %}
+          {% if liuser %}
+            {{ liuser.name|escape }} |
+            <a href="{{ lilogout_url|escape }}" onmouseover="makeVisible('ppp2')"><img src="/static/images/in16.png" alt="LinkedIn" onmouseover="makeVisible('ppp2')"></img> {{ msgtext_logout }}</a>
+          {% else %}
+            <a href="{{ lilogin_url|escape }}" onmouseover="makeVisible('ppp2')"><img src="/static/images/in16.png" alt="LinkedIn" onmouseover="makeVisible('ppp2')"></img> {{ msgtext_login }}</a>
+          {% endif %}
+          {% if fbuser %}
+            {{ fbuser.name|escape }} |
+            <a href="{{ fblogout_url|escape }}" onmouseover="makeVisible('ppp3')"><img src="/static/images/fb16.png" alt="FaceBook" onmouseover="makeVisible('ppp3')"></img> {{ msgtext_logout }}</a>
+          {% else %}
+            <a href="{{ fblogin_url|escape }}" onmouseover="makeVisible('ppp3')"><img src="/static/images/fb16.png" alt="FaceBook" onmouseover="makeVisible('ppp3')"></img> {{ msgtext_login }}</a>
+          {% endif %}
+          {% if vkuser %}
+            {{ vkuser.name|escape }} |
+            <a href="{{ vklogout_url|escape }}" onmouseover="makeVisible('ppp4')"><img src="/static/images/vk16.png" alt="VKontakte" onmouseover="makeVisible('ppp4')"></img> {{ msgtext_logout }}</a>
+          {% else %}
+            <a href="{{ vklogin_url|escape }}" onmouseover="makeVisible('ppp4')"><img src="/static/images/vk16.png" alt="VKontakte" onmouseover="makeVisible('ppp4')"></img> {{ msgtext_login }}</a>
+          {% endif %}
+		</div>
+		
+		<div class="widget">
+		<h2>---</h2>
+<div id="userlist">
+
+<div id="ppp1">		
+					<h3>Google User Table</h3>
+		<iframe src="/{{ cmspath|escape }}-memberlistshort-lt.html?pg=0" width="100" height="200" scrolling="no" style="border-style: none; padding: 0; margin: 0;"></iframe>
+</div>
+<div id="ppp2" style="display: none">		
+					<h3>LinkedIn User Table</h3>
+		<iframe src="/{{ cmspath|escape }}-limemberlistshort-lt.html?pg=0" width="100" height="200" scrolling="no" style="border-style: none; padding: 0; margin: 0;"></iframe>
+</div>
+<div id="ppp3" style="display: none">		
+					<h3>FaceBook User Table</h3>
+		<iframe src="/{{ cmspath|escape }}-fbmemberlistshort-lt.html?pg=0" width="100" height="200" scrolling="no" style="border-style: none; padding: 0; margin: 0;"></iframe>
+</div>
+<div id="ppp4" style="display: none">		
+					<h3>ВКонтакте User Table</h3>
+		<iframe src="/{{ cmspath|escape }}-vkmemberlistshort-lt.html?pg=0" width="100" height="200" scrolling="no" style="border-style: none; padding: 0; margin: 0;"></iframe>
+</div>
+</div>		
+		<h2>---</h2>
+                    <img id="ctl00_ContentPlaceHolder1_Image1" src="/static/images/kalve180.jpg" style="border-width:0px;" alt="" /><br /><br />
+                    <img id="ctl00_ContentPlaceHolder1_Image2" src="/static/images/kalve180.jpg" style="border-width:0px;" alt="" /><br /><br />
+                    <img id="ctl00_ContentPlaceHolder1_Image3" src="/static/images/kalve180.jpg" style="border-width:0px;" alt="" /><br /><br />
+		<br/><br/>
+		<strong></strong>
+	</div></div></div>
+	
+	<div id="footer">
+		Programed by <a href="http://www.upe.lt/">upe.lt</a>, Hosting <a href="http://appengine.google.com/">Google App Engine</a>
+	</div>
+
+
+</div>
+
+</body>
+
+</html>

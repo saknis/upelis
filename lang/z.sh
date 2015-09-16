@@ -1,0 +1,3 @@
+
+cd "/mnt/app/upelis/"
+

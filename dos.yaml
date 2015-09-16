@@ -1,0 +1,3 @@
+blacklist:
+- subnet: 5.39.219.26
+  description: a single IP address

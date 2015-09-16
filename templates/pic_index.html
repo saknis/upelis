@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block head %}
+  <style type="text/css">
+
+
+  </style>
+{% endblock %}
+
+{% block buttons %}
+              {% if not noedit %}
+                <span class="item"><input type="button" onclick="location.href='{{ page.edit_url|escape }}'" value="Edit This Page"/></span>
+              {% endif %}
+{% endblock %}
+{% block menu %}
+  {{ menu.content|safe }}
+{% endblock %}
+{% block kalbos %}
+  {{ kalbos.content|safe }}
+{% endblock %}
+{% block body %}
+{% endblock %}
+{% block title %}{{imgshar_msg_7}}{% endblock %}
+{% block content %}
+{% for album in albums %}
+<div class='albumpreview'>
+  <div class='albumtitle'><a href='/upelis-picalbum-{{plet}}/{{album.key}}'>{{album.name}}</a></div>
+</div>
+{% endfor %}
+<br /><br />
+<a href='/upelis-picsearch-{{plet}}'>{{imgshar_msg_8}}</a><br />
+{% if isadmin %}
+<a href='/upelis-picnew-{{plet}}'>{{imgshar_msg_9}}</a>
+{% endif %}
+{% endblock %}

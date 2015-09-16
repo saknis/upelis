@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block head %}
+  <style type="text/css">
+
+
+  </style>
+{% endblock %}
+
+{% block buttons %}
+              {% if not noedit %}
+                <span class="item"><input type="button" onclick="location.href='{{ page.edit_url|escape }}'" value="Edit This Page"/></span>
+              {% endif %}
+{% endblock %}
+{% block menu %}
+  {{ menu.content|safe }}
+{% endblock %}
+{% block kalbos %}
+  {{ kalbos.content|safe }}
+{% endblock %}
+{% block body %}
+{% endblock %}
+{% block title %}{{imgshar_msg_10}}{% endblock %}
+{% block content %}
+<form action='/upelis-picnew-{{plet}}' method='post'>
+  <div>{{imgshar_msg_11}}<input name='albumname' type='text'></div>
+  <div><input type='submit' value='{{imgshar_msg_12}}'></div>
+</form>
+{%endblock content %}
