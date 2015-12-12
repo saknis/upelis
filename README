@@ -2,7 +2,6 @@ Ver 1.6.4 - latest for
 
 Ver 1.4.1 - rewrite to Python 2.7
 Python CMS based on modules cccwiki, image_sharing, appengine-template, PNG Canvas combined and programmed for Nerijaus Terebas. This is a very simple CMS, that allows to create a website in Google App Engine free hosting.
-For Google AppEngine Hosting.
 
 Function:
 
